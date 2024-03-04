@@ -9,3 +9,33 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "monthly"
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /site
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /src/Crossroads.Launcher
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /src/Crossroads
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /test/Crossroads.Launcher.Test
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /test/Crossroads.Test
+    schedule:
+      interval: daily
